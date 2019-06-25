@@ -1,0 +1,90 @@
+{
+	"version": "1.0",
+	"session": {
+		"new": false,
+		"sessionId": "amzn1.echo-api.session.xxx",
+		"application": {
+			"applicationId": "amzn1.ask.skill.xxx"
+		},
+		"user": {
+			"userId": "amzn1.ask.account.xxx"
+		}
+	},
+	"context": {
+		"System": {
+			"application": {
+				"applicationId": "amzn1.ask.skill.xxx"
+			},
+			"user": {
+				"userId": "amzn1.ask.account.xxx"
+			},
+			"device": {
+				"deviceId": "amzn1.ask.device.xxx",
+				"supportedInterfaces": {}
+			},
+			"apiEndpoint": "https://api.amazonalexa.com",
+			"apiAccessToken": "xxx"
+		},
+		"Viewport": {
+			"experiences": [
+				{
+					"arcMinuteWidth": 246,
+					"arcMinuteHeight": 144,
+					"canRotate": false,
+					"canResize": false
+				}
+			],
+			"shape": "RECTANGLE",
+			"pixelWidth": 1024,
+			"pixelHeight": 600,
+			"dpi": 160,
+			"currentPixelWidth": 1024,
+			"currentPixelHeight": 600,
+			"touch": [
+				"SINGLE"
+			],
+			"video": {
+				"codecs": [
+					"H_264_42",
+					"H_264_41"
+				]
+			}
+		}
+	},
+	"request": {
+		"type": "IntentRequest",
+		"requestId": "amzn1.echo-api.request.xxx",
+		"timestamp": "2019-06-23T08:10:58Z",
+		"locale": "ja-JP",
+		"intent": {
+			"name": "CheckHoroscopeIntent",
+			"confirmationStatus": "NONE",
+			"slots": {
+				"constellation": {
+					"name": "constellation",
+					"value": "しし座",
+					"resolutions": {
+						"resolutionsPerAuthority": [
+							{
+								"authority": "amzn1.er-authority.echo-sdk.xxx",
+								"status": {
+									"code": "ER_SUCCESS_MATCH"
+								},
+								"values": [
+									{
+										"value": {
+											"name": "獅子座",
+											"id": "xxx"
+										}
+									}
+								]
+							}
+						]
+					},
+					"confirmationStatus": "NONE",
+					"source": "USER"
+				}
+			}
+		}
+	}
+}
